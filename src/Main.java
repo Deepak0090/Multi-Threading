@@ -56,15 +56,15 @@ import java.util.Date;
 //        return this.name;
 //    }
 //}
- class Counter{
-     private int count =0;
-     public void increment(){
-         count++;
-     }
-     public int getCount(){
-         return count;
-     }
-}
+// class Counter{
+//     private int count =0;
+//     public void increment(){
+//         count++;
+//     }
+//     public int getCount(){
+//         return count;
+//     }
+//}
 public class Main {
     public static void main(String[] args) {
 //        System.out.println("Hello and welcome!");
@@ -90,28 +90,28 @@ public class Main {
 //        });
 //        t1.start();
 //        t2.start();
-        Counter counter = new Counter();
-
-        Thread t1 = new Thread(() -> {
-            for (int i=0; i<100; i++){
-                System.out.println("💖");
-                counter.increment();
-            }
-        });
-        Thread t2 = new Thread(() -> {
-            for (int i=0; i<100; i++){
-                System.out.println("♥");
-                counter.increment();
-            }
-        });
-        t1.start();
-        t2.start();
-        try{
-            t1.join();
-            t2.join();
-        }catch (InterruptedException e){
-            e.printStackTrace();
-        }
-        System.out.println(counter.getCount());
+//        Counter counter = new Counter();
+//
+//        Thread t1 = new Thread(() -> {
+//            for (int i=0; i<100; i++){
+//                System.out.println("💖");
+//                counter.increment();
+//            }
+//        });
+//        Thread t2 = new Thread(() -> {
+//            for (int i=0; i<100; i++){
+//                System.out.println("♥");
+//                counter.increment();
+//            }
+//        });
+//        t1.start();
+//        t2.start();
+//        try{
+//            t1.join();
+//            t2.join();
+//        }catch (InterruptedException e){
+//            e.printStackTrace();
+//        }
+//        System.out.println(counter.getCount());
     }
 }
